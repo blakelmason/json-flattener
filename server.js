@@ -32,6 +32,6 @@ app.get('/json', (req, res) =>
   res.download('samples/sales_report.json', 'sales_report.json')
 )
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`App is listening on port ${PORT}`))
