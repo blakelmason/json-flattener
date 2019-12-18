@@ -19,17 +19,30 @@
   </head>
   <body>
     <div class="container-fluid my-5">
-      <div class="my-4">
+      <div class="h4">
+        Download the sample JSON which includes some mock data which needs to be
+        flattened.
+      </div>
+      <div class="mb-4">
         <button type="button" id="downloadJSON" download>
           Download Sample JSON
         </button>
       </div>
-      <div class="my-4">
+      <hr />
+      <div class="mb-4">
+        <div class="h4">
+          Upload the sample JSON here to have it be flattened.
+        </div>
         <input type="file" id="file" />
         <button type="button" id="submit">Submit</button>
         <span class="ml-4" id="message"></span>
       </div>
+      <hr />
       <div class="my-4">
+        <div class="h4">
+          Download the flattened version of the JSON file in CSV format. This
+          downloads the most recently uploaded file.
+        </div>
         <button type="button" id="download" download>Download CSV</button>
       </div>
     </div>
